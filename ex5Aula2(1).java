@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner in = new Scanner(System.in);
+        
+        int v[] = new int[10];
+        int w[] = new int[10];
+        
+        System.out.println("Digite 10 valores para o seu veotor");
+        
+        for(int i = 0; i < 10; i++){
+            v[i] = in.nextInt();
+            for(int j = 0; j < i; j++){
+                boolean temigual = false;
+                if(v[i] == v[j]){
+                    temigual = true;
+                    System.out.println("Digite outro numero");
+                    v[i] = in.nextInt();
+                }
+            }
+            
+        }
+
+
+        for(int i = 0; i < 10; i++){
+            System.out.println(v[i]);
+        }
+    }
+}
