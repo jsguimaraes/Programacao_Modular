@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class A3ex6_2{
     public static void main(String[] args){
         
         Scanner in = new Scanner(System.in);
@@ -40,6 +40,7 @@ public class Main{
                         soma = soma + (A[i][k] * B[k][j]);
                     }
                     R[i][j] = soma;
+                    soma = 0;
                 }
             }
             

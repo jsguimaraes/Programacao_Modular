@@ -26,7 +26,5 @@ public class ex5Aula2 {
         }
 
 
-
-
     }
 }
